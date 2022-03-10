@@ -55,17 +55,14 @@ function Chart(props) {
   ]
 
 
-  // for(let expence of props.expences){
-  //  let month= expence.date.getMonth()-1
-  //  chartDataPoints[month].value+=expence.price
+  for(let expence of props.expences){
+   let month= expence.date.getMonth()-1
+   chartDataPoints[month].value+=expence.price
    
 
-  //  }
-  console.log(props.expences.length)
-  for(let i=0;i<props.expences.length;i++){
-    chartDataPoints[i].value+=props.expences[i].price
-  }
-  console.log(chartDataPoints)
+   }
+ 
+  
   
       let arrayOfMax=chartDataPoints.map((item)=>{
         return item.value
