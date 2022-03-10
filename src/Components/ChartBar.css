@@ -1,0 +1,21 @@
+.outer-bar{
+    width: 10px;
+    height: 84px;
+    border-radius: 10px;
+    background: gray;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+.chart-bar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.inner-bar{
+    background: rgb(132, 0, 255);
+    height: 20px;
+    border-radius: 10px;
+    transition: ease-out 1s;
+    
+}
