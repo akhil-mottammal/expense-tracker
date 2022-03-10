@@ -10,6 +10,7 @@
     align-items: center;
     justify-content: space-between;
     margin: 1rem 0;
+    flex-direction: row;
   }
   
   .expenses-filter label {
@@ -22,4 +23,14 @@
     padding: 0.5rem 3rem;
     font-weight: bold;
     border-radius: 6px;
+  }
+  @media(max-width:600px){
+     .expenses-filter__control{
+      flex-direction: column;
+      
+     }
+     .expenses-filter select {
+    padding: 1px;
+    font-size: 15px;
+        }
   }
